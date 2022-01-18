@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    app:cardElevation="12dp"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="@color/primaryVariant"
+    app:rippleColor="@color/secondary"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/cv_main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="1"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:text="Mencuci Baju"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
